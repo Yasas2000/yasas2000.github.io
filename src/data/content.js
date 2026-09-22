@@ -24,7 +24,7 @@ export const profile = {
     "I am a Lecturer in the Department of Computer Science and Engineering at the University of Moratuwa. My research covers AI/ML, Multi Agent Software Systems, Database Security/Optimization and the security and privacy of intelligent systems. I am also interested in the development of resillent and scalable software systems, to solve real world problems with scalability and security.",
   tags: ["AI & Machine Learning", "Intelligent Systems and Multi Agent Systems", "System Security and Cyber Security", "Software Engineering", "Database Security and Optimization"],
   photo: "assets/profile.jpeg",
-  cv: "https://drive.google.com/file/d/1XvAEj4LqehVYDgPlof1UZc2-z2jBEk7a/view?usp=drive_link",
+  cv: "https://drive.google.com/file/d/12zA701fiG-9d_qL-kKGZ_p3vLjrpIQpC/view?usp=drive_link",
   email: "yasas@cse.mrt.ac.lk",
   address: "Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka",
   contactText:
