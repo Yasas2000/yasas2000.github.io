@@ -55,7 +55,4 @@ file to add, and an empty link shows a dashed "add link" tag. Once everything is
 
 Prefer manual? Run `npm run build` and upload the contents of the `dist/` folder.
 
-## Privacy note
 
-`public/assets/Yasas_Ekanayake_CV.pdf` is public once deployed. The current CV includes a phone number and
-referee contact details, so consider replacing it with a version without them.
