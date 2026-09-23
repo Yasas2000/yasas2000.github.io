@@ -12,10 +12,10 @@ export default function App() {
       <main>
         <Hero />
         <Research />
+        <Education />
         <Projects />
         <Publications />
         <Experience />
-        <Education />
         <Service />
         <Honors />
         <Skills />

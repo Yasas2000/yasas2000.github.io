@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {
   profile, interests, projects, publications, scholarUrl, experience,
-  education, service, honors, skills, certifications,
+  education, testScores, service, honors, skills, certifications,
 } from "../data/content.js";
 import Media from "./Media.jsx";
 import Links from "./Links.jsx";
@@ -225,6 +225,42 @@ export const Education = () => (
         </article>
       ))}
     </div>
+
+    {testScores.length > 0 && (
+      <>
+        <h3 className="subhead">Test Scores</h3>
+        <div className="timeline-wrap">
+          {testScores.map((e, idx) => (
+            <article className={`tl-item${idx === testScores.length - 1 ? " tl-last" : ""}`} key={e.period + e.title}>
+              <div className="tl-line">
+                <span className="tl-dot" />
+              </div>
+              <div className="tl-card">
+                <div className="tl-card-inner">
+                  <div className="tl-card-logo">
+                    {"logo" in e ? (
+                      <Media src={e.logo} alt={`${e.org} logo`} className="edu-logo" hint="Logo" />
+                    ) : (
+                      <div className="edu-logo-placeholder" />
+                    )}
+                  </div>
+                  <div className="tl-card-body">
+                    <div className="tl-card-top">
+                      <h3>{e.title}</h3>
+                      <span className="period-tag">{e.period}</span>
+                    </div>
+                    <p className="sub">{e.orgUrl ? <a href={e.orgUrl} target="_blank" rel="noopener noreferrer">{e.org}</a> : e.org}</p>
+                    {e.text && <p className="tl-desc">{e.text}</p>}
+                    <Tags items={e.tags} />
+                    <Links links={e.links} />
+                  </div>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </>
+    )}
   </Section>
 );
 

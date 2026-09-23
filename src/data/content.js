@@ -40,10 +40,10 @@ export const profile = {
 // Top menu. "id" must match a section id on the page.
 export const nav = [
   { id: "research", label: "Research" },
+  { id: "education", label: "Education" },
   { id: "projects", label: "Projects" },
   { id: "publications", label: "Publications" },
   { id: "experience", label: "Experience" },
-  { id: "education", label: "Education" },
   { id: "service", label: "Service" },
   { id: "honors", label: "Honors" },
   { id: "skills", label: "Skills" },
@@ -239,6 +239,10 @@ export const education = [
       { label: "Result", url: "https://drive.google.com/file/d/14wBAJVaGvD6eSf8NX0jBnoZBi9NP6GLM/view?usp=drive_link" }
     ],
   },
+];
+
+/* ----------------------------- Test Scores ------------------------------- */
+export const testScores = [
   {
     period: "June 2026",
     title: "IELTS Academic",
